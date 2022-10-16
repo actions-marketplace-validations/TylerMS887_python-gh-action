@@ -1,6 +1,6 @@
 # Git functionallity for Python. Included in src/requirements.txt.
 from jk_git import *
-# GitHub functionallity for Python. Included in src/requirements.txt. Official GitHub library, see
+# GitHub functionallity for Python. Included in src/requirements.txt. Semi-official GitHub library, see
 # https://github.blog/2020-12-18-learn-about-ghapi-a-new-third-party-python-client-for-the-github-api/
 from ghapi.core import GhApi
 GH = GhApi()
