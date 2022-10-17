@@ -1,0 +1,16 @@
+# A metadata file. Do not modify 
+name: 'Hello World'
+description: 'Greet somebody'
+runs:
+  using: "composite"
+  steps:
+    - run: if [[ -f requirements.txt ]]; then pip install -r requirements.txt >> /dev/null; fi
+      shell: bash
+    - run: if [[ -f src/requirements.txt ]]; then pip install -r src/requirements.txt >> /dev/null; fi
+      shell: bash
+    - run: pip install pylint >> /dev/null
+      shell: bash
+    - run: pylint >> /dev/null
+      shell: bash          
+    - run: python src/action.py
+      shell: bash
