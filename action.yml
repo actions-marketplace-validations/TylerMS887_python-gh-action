@@ -1,4 +1,5 @@
-# A metadata file. Do not modify 
+# A metadata file. Do not modify anything but stuff to do with listing
+# to the Marketplace.
 name: 'Hello World'
 description: 'Greet somebody'
 runs:
