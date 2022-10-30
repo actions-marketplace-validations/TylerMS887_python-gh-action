@@ -7,7 +7,7 @@ GH = GhApi()
                               # Start of Action #
 # A simple "Hello, World!" action.
 #
-# Replace the entire content of this file with your own content, except the first 7 lines.
+# Replace the entire content of this file with your own content, except the first 6 lines.
 # After replacing the code, that code will be executed when the Actions workflow
 # starts this action.
 print("Hello World!")
