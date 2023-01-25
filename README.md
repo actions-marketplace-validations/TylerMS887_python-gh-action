@@ -28,4 +28,4 @@ Metadata is in the `action.yml` file, just like most other GitHub actions. Edit
 This GitHub action works as a composite script. It:
 1. Installs dependencies. Python support for GitHub Actions offers the Python package manager,
    `pip`. `requirements.txt` and `src/requirements.txt` will be installed if one of them exist.
-3. Runs the code for the action.
+3. Runs the code for the action from `${{github.action_path}}/src`.
