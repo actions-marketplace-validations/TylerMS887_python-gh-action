@@ -1,7 +1,7 @@
-# A metadata file. Do not modify anything but stuff to do with listing
-# to the Marketplace.
+# A metadata file. Do not modify anything but stuff to do with listing to the Marketplace,
+# such as adding an icon
 name: 'Hello World'
-description: 'Greet somebody'
+description: 'Greet Earth'
 runs:
   using: "composite"
   steps:
@@ -9,5 +9,5 @@ runs:
       shell: bash
     - run: if [[ -f src/requirements.txt ]]; then pip install -r src/requirements.txt >> /dev/null; fi
       shell: bash 
-    - run: python src/action.py
+    - run: python ${{github.action_path}}/src/action.py
       shell: bash
