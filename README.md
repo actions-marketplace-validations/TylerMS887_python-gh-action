@@ -11,6 +11,11 @@ This template is designed for those with basic knowledge of Python 3.
 > example. This project was designed to provide extended code support for GitHub
 > Actions.
 
+> **Note**: On Windows, the action will occur on WSL which means all commands in the
+> workflows that depend on a Python action must run on WSL (therefore use Unix paths).
+> But **why**? Because this action uses `bash` as the shell, which on Windows basically
+> starts a WSL session, but on Linux, starts a Bash shell.
+
 ## How to use
 
 Click [here](https://github.com/TylerMS887/python-gh-action/generate) to create a new
