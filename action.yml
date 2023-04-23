@@ -1,7 +1,7 @@
 # A metadata file. Do not modify anything but stuff to do with listing to the Marketplace,
-# such as adding an icon
-name: 'Hello World'
-description: 'Greet Earth'
+# such as adding an icon or the name/description
+name: 'Hello World (Python Version)'
+description: 'Greet the Earth. This is an example of an action using Python.'
 runs:
   using: "composite"
   steps:
